@@ -1,0 +1,18 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "vector": "cpp",
+        "xstring": "cpp",
+        "cmath": "cpp",
+        "ios": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "xiosbase": "cpp",
+        "algorithm": "cpp",
+        "map": "cpp",
+        "utility": "cpp",
+        "xtree": "cpp",
+        "deque": "cpp",
+        "limits": "cpp"
+    }
+}
