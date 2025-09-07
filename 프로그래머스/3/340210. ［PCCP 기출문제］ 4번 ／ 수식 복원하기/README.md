@@ -1,6 +1,7 @@
 # [level 3] [PCCP 기출문제] 4번 / 수식 복원하기 - 340210 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/340210) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/340210)
+[https://velog.io/@potion/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4CPCCP-%EA%B8%B0%EC%B6%9C-4%EB%B2%88-%EC%88%98%EC%8B%9D-%EB%B3%B5%EC%9B%90%ED%95%98%EA%B8%B0](velog)
 
 ### 성능 요약
 
