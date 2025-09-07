@@ -1,6 +1,7 @@
 # [level 2] 비밀 코드 해독 - 388352 
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/388352) 
+[벨로그 링크](https://velog.io/@potion/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4C%EB%B9%84%EB%B0%80-%EC%BD%94%EB%93%9C-%ED%95%B4%EB%8F%85)
 
 ### 성능 요약
 
