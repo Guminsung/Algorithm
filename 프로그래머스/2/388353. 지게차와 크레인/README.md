@@ -2,6 +2,8 @@
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/388353) 
 
+[벨로그 링크](https://velog.io/@potion/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4C%EC%A7%80%EA%B2%8C%EC%B0%A8%EC%99%80-%ED%81%AC%EB%A0%88%EC%9D%B8)
+
 ### 성능 요약
 
 메모리: 4.2 MB, 시간: 8.86 ms
