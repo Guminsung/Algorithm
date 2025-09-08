@@ -16,7 +16,7 @@ int solution(int n, int w, int num) {
     {
         int y = (n - 1) % w;
         if (y >= j)
-            answer = x - i + 1;
+            answer = x - i + 1;        // 마지막 상자의 세로 위치가 짝수일 때는 오른쪽 방향으로 채움
         else
             answer = x - i;
     }
@@ -24,7 +24,7 @@ int solution(int n, int w, int num) {
     {
         int y = (w - 1) - ((n - 1) % w);
         if (y <= j)
-            answer = x - i + 1;
+            answer = x - i + 1;        // 세로 위치가 홀수일 때는 왼쪽 방향으로 채움
         else
             answer = x - i;
     }
