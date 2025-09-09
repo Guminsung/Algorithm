@@ -1,6 +1,8 @@
 # [level 2] 완전범죄 - 389480 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/389480) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/389480)
+
+[벨로그 링크](https://velog.io/@potion/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4C%EC%99%84%EC%A0%84%EB%B2%94%EC%A3%84)
 
 ### 성능 요약
 
