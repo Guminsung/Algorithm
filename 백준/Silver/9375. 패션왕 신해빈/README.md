@@ -1,6 +1,8 @@
 # [Silver III] 패션왕 신해빈 - 9375 
 
-[문제 링크](https://www.acmicpc.net/problem/9375) 
+[문제 링크](https://www.acmicpc.net/problem/9375)
+
+[벨로그 링크](https://velog.io/@potion/%EB%B0%B1%EC%A4%80C9375%EB%B2%88-%ED%8C%A8%EC%85%98%EC%99%95-%EC%8B%A0%ED%95%B4%EB%B9%88)
 
 ### 성능 요약
 
