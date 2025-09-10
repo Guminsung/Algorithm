@@ -2,7 +2,7 @@
 
 [문제 링크](https://www.acmicpc.net/problem/1005)
 
-[벨로그 링](https://velog.io/@potion/%EB%B0%B1%EC%A4%80C1005%EB%B2%88-ACM-Craft)
+[벨로그 링크](https://velog.io/@potion/%EB%B0%B1%EC%A4%80C1005%EB%B2%88-ACM-Craft)
 
 ### 성능 요약
 
