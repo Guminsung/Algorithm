@@ -1,6 +1,8 @@
 # [Silver I] IOIOI - 5525 
 
-[문제 링크](https://www.acmicpc.net/problem/5525) 
+[문제 링크](https://www.acmicpc.net/problem/5525)
+
+[벨로그 링크](https://velog.io/@potion/%EB%B0%B1%EC%A4%80C17626%EB%B2%88-IOIOI)
 
 ### 성능 요약
 
