@@ -14,7 +14,7 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     int x, y;
-    bool check = false; // 전역 변수가 아닐 때는 초기화 필수, 아니면 쓰레기값 들어감
+    bool check = false;
     cin >> n >> m;
     for (int i = 0; i < n; i++)
         cin >> campus[i];
@@ -52,5 +52,4 @@ void dfs(int x, int y)
                 dfs(nx, ny);
             }
     }
-
 }
