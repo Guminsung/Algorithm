@@ -1,6 +1,8 @@
 # [Silver III] Four Squares - 17626 
 
-[문제 링크](https://www.acmicpc.net/problem/17626) 
+[문제 링크](https://www.acmicpc.net/problem/17626)
+
+[벨로그 링크](https://velog.io/@potion/%EB%B0%B1%EC%A4%80C17626%EB%B2%88-FourSquares)
 
 ### 성능 요약
 
