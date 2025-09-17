@@ -1,6 +1,8 @@
 # [Gold V] AC - 5430 
 
-[문제 링크](https://www.acmicpc.net/problem/5430) 
+[문제 링크](https://www.acmicpc.net/problem/5430)
+
+[벨로그 링크](https://velog.io/@potion/%EB%B0%B1%EC%A4%80C5430%EB%B2%88-AC)
 
 ### 성능 요약
 
