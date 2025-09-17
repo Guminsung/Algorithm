@@ -1,6 +1,8 @@
 # [Silver II] 헌내기는 친구가 필요해 - 21736 
 
-[문제 링크](https://www.acmicpc.net/problem/21736) 
+[문제 링크](https://www.acmicpc.net/problem/21736)
+
+[벨로그 링크](https://velog.io/@potion/%EB%B0%B1%EC%A4%80C21736%EB%B2%88-%ED%97%8C%EB%82%B4%EA%B8%B0%EB%8A%94-%EC%B9%9C%EA%B5%AC%EA%B0%80-%ED%95%84%EC%9A%94%ED%95%B4)
 
 ### 성능 요약
 
