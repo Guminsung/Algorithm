@@ -1,6 +1,8 @@
 # [Gold IV] 거짓말 - 1043 
 
-[문제 링크](https://www.acmicpc.net/problem/1043) 
+[문제 링크](https://www.acmicpc.net/problem/1043)
+
+[벨로그 링크](https://velog.io/@potion/%EB%B0%B1%EC%A4%80C1043%EB%B2%88-%EA%B1%B0%EC%A7%93%EB%A7%90)
 
 ### 성능 요약
 
