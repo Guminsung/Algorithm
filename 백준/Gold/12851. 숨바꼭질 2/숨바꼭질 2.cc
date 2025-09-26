@@ -1,51 +1,54 @@
-#include <iostream>
-#include <queue>
-
+#include<iostream>
+#include<algorithm>
+#include<queue>
 using namespace std;
-int mn[200000]; // 각 위치의 최소 시간 저장 변수
 
-int main()
+int dist[100002];
+int cnt[100002];
+queue<int> q;
+
+int main(void)
 {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    int n, k, cnt = 0, mx = 1000000;   // 경우의 수와 가장 빠른 시간 저장 변수
-    priority_queue<pair<int, int>> pq; // 가장 빠른 시간부터 탐색하기 위한 우선순위 큐
-    cin >> n >> k;
-    for (int i = 0; i < 200000; i++)
-        mn[i] = mx;  // 각 위치 시간 초기화
-    pq.push({0, n}); // 초기 값 입력
-    while (!pq.empty())
-    {
-        int t = -pq.top().first, p = pq.top().second;
-        pq.pop();
-        if (p == k)
-        {
-            mx = t; // 목적지에 대한 최소 시간 갱신
-            cnt++;
-            continue;
-        }
-        if (mx < t)
-            break; // 최종 최소 시간보다 오래 걸리는 정보는 제외
-        if (p > 0 && mn[p - 1] >= t + 1)
-        {
-            mn[p - 1] = t + 1; // 위치에 대한 최소 시간보다 오래 걸리면 제외
-            pq.push({-(t + 1), p - 1});
-        }
-        if (p < k)
-        {
-            if (mn[p + 1] >= t + 1)
-            {
-                mn[p + 1] = t + 1;
-                pq.push({-(t + 1), p + 1});
-            }
-            if (mn[p * 2] >= t + 1)
-            {
-                mn[p * 2] = t + 1;
-                pq.push({-(t + 1), p * 2});
-            }
-        }
-    }
-    cout << mx << "\n"
-         << cnt;
-    return 0;
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+
+	int n, k;
+	cin >> n >> k;
+
+	if (n == k)
+	{
+		cout << 0 <<"\n"<<1;
+		return 0;
+	}
+
+	fill(dist, dist + 100002, -1);
+
+	dist[n] = 0;
+	cnt[n] = 1;
+	q.push(n);
+
+	while (!q.empty())
+	{
+		int cur = q.front(); q.pop();
+		for (int nx : {cur + 1, cur - 1, cur * 2})
+		{
+			if (nx < 0 || nx>100000) continue;
+			if (dist[nx] != -1)	//방문 했던 곳이면
+			{
+				if (dist[cur] + 1 == dist[nx])//최단 거리가 같은 경우
+					cnt[nx] += cnt[cur];
+			}
+			else
+				//방문을 처음 했다면
+			{
+				dist[nx] = dist[cur] + 1;	//최단 거리 갱신
+				cnt[nx] = cnt[cur];			//처음 간 경우
+				q.push(nx);
+			}
+		}
+	}
+
+	cout << dist[k] << "\n" << cnt[k];
+
+	return 0;
 }
