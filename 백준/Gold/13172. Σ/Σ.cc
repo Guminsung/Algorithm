@@ -16,8 +16,8 @@ int main()
     for (int i = 0; i < m; i++)
     {
         cin >> n >> s;
-        md = mul(n, mod - 2);
-        sm += (s * md) % mod;
+        md = mul(n, mod - 2); // 역원 계산
+        sm += (s * md) % mod; // 기댓값 합산
         sm %= mod;
     }
     cout << sm;
@@ -30,8 +30,8 @@ ll mul(ll x, int k)
         return 1; // x의 0승은 1 return
     int mid = k / 2;
     ll ml = mul(x, mid) % mod; // x의 k/2제곱을 계산
-    ml = (ml * ml) % mod; // x의 k/2제곱의 2제곱을 계산
-    if (k % 2 == 1) // k가 홀수면 x를 한 번 더 곱셈
+    ml = (ml * ml) % mod;      // x의 k/2제곱의 2제곱을 계산
+    if (k % 2 == 1)            // k가 홀수면 x를 한 번 더 곱셈
         ml = (ml * x) % mod;
     return ml;
 }
