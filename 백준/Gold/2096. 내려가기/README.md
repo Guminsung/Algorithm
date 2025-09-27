@@ -1,6 +1,8 @@
 # [Gold V] 내려가기 - 2096 
 
-[문제 링크](https://www.acmicpc.net/problem/2096) 
+[문제 링크](https://www.acmicpc.net/problem/2096)
+
+[벨로그 링크](https://velog.io/@potion/%EB%B0%B1%EC%A4%80C1043%EB%B2%88-%EA%B1%B0%EC%A7%93%EB%A7%90-6e9amh7x)
 
 ### 성능 요약
 
