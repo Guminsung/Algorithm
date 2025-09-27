@@ -1,6 +1,8 @@
 # [Gold IV] 숨바꼭질 2 - 12851 
 
-[문제 링크](https://www.acmicpc.net/problem/12851) 
+[문제 링크](https://www.acmicpc.net/problem/12851)
+
+[벨로그 링크](https://velog.io/@potion/%EB%B0%B1%EC%A4%80C12851%EB%B2%88-%EC%88%A8%EB%B0%94%EA%BC%AD%EC%A7%88-2)
 
 ### 성능 요약
 
