@@ -5,7 +5,6 @@ using namespace std;
 
 int cost[501];      // 최소시간 저장 배열
 int cycle[501];     // 음의 사이클 체크 배열
-int INF = 50000000; // 초기화 변수
 
 int main()
 {
@@ -17,9 +16,8 @@ int main()
     {
         vector<vector<pair<int, int>>> load(501); // 각 지점의 도로 저장 배열
         cin >> n >> m >> w;
-        cost[1] = 0; // 시작 지점 값 0으로 설정
-        for (int j = 2; j <= n; j++)
-            cost[j] = INF; // 배열 초기화
+        for (int j = 1; j <= n; j++)
+            cost[j] = 0; // 배열 초기화
         for (int j = 0; j < m; j++)
         {
             cin >> s >> e >> t;
