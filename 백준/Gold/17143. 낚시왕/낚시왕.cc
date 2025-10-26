@@ -85,9 +85,8 @@ void moving(vector<vector<int>> &b, vector<Shark> &sh, int R, int C)
             {
                 int cycle = 2 * len; // 왕복 주기
                 int idx = cr - 1;    // 나머지 연산을 위해 -1
-                // 진행 방향 할당
+                // 언폴드 방식 위치 설정
                 int mv = (cd == 2 ? idx : cycle - idx);
-                // 이동 후 위치 - 1
                 int m = (sh[i].s + mv) % cycle;
                 if (m < 0)
                     m += cycle; // 음수면 양수로 전환
@@ -153,4 +152,5 @@ void moving(vector<vector<int>> &b, vector<Shark> &sh, int R, int C)
             sh[i].alive = false; // 원래 있던 상어보다 작으면 잡아먹힘
     }
     b.swap(nb); // 원본 보드에 적용
+
 }
