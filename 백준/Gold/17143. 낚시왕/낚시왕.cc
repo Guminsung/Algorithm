@@ -13,9 +13,8 @@ struct Shark
 void fishing(vector<vector<int>> &b, vector<Shark> &sh, int r, int y);
 // 상어 이동 함수 정의
 void moving(vector<vector<int>> &b, vector<Shark> &sh, int r, int c);
-int dx[5] = {0, -1, 1, 0, 0}, dy[5] = {0, 0, 0, 1, -1}; // 델타 탐색 변수
-int flip[5] = {0, 2, 1, 4, 3};                          // 방향 전환 변수
-int sm = 0;                                             // 상어 크기 합 저장 변수
+int flip[5] = {0, 2, 1, 4, 3}; // 방향 전환 변수
+int sm = 0;                    // 상어 크기 합 저장 변수
 
 int main()
 {
@@ -79,15 +78,63 @@ void moving(vector<vector<int>> &b, vector<Shark> &sh, int R, int C)
             continue; // 제외된 상어 스킵
         // 현재 위치와 방향 할당
         int cr = sh[i].r, cc = sh[i].c, cd = sh[i].d;
-        for (int j = 0; j < sh[i].s; j++)
+        if (cd == 1 || cd == 2) // 세로 방향 전환
         {
-            int nr = cr + dx[cd], nc = cc + dy[cd]; // 이동 위치 할당
-            if (nr < 1 || nr > R || nc < 1 || nc > C)
+            int len = R - 1; // 양 끝 사이 간격
+            if (len)
             {
-                cd = flip[cd]; // 양 끝 도달 시 방향 전환
-                nr = cr + dx[cd], nc = cc + dy[cd];
+                int cycle = 2 * len; // 왕복 주기
+                int idx = cr - 1;    // 나머지 연산을 위해 -1
+                // 진행 방향 할당
+                int mv = (cd == 2 ? idx : cycle - idx);
+                // 이동 후 위치 - 1
+                int m = (sh[i].s + mv) % cycle;
+                if (m < 0)
+                    m += cycle; // 음수면 양수로 전환
+                if (m < len)
+                {
+                    cr = m + 1; // 정방향 구간
+                    cd = 2;
+                }
+                else if (m == len)
+                {
+                    cr = len + 1; // 정방향 끝 도착
+                    cd = 1;       // 방향 전환
+                }
+                else
+                {
+                    cr = (2 * len - m) + 1; // 역방향 구간
+                    cd = 1;
+                }
             }
-            cr = nr, cc = nc;
+        }
+        else // 가로 방향 전환
+        {
+            int len = C - 1;
+            if (len)
+            {
+                int cycle = 2 * len;
+                int idx = cc - 1;
+                int mv = (cd == 3 ? idx : cycle - idx);
+                int m = (sh[i].s + mv) % cycle;
+                if (m < 0)
+                    m += cycle;
+                if (m < len)
+                {
+                    cc = m + 1;
+                    cd = 3;
+                }
+                else if (m == len)
+                {
+                    cc = len + 1;
+                    cd = 4;
+                }
+                else
+                {
+                    cc = (2 * len - m) + 1;
+                    cd = 4;
+                }
+            }
         }
         int check = nb[cr][cc];
         if (!check)
