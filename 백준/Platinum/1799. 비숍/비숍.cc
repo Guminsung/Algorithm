@@ -3,10 +3,10 @@
 
 using namespace std;
 
-// 왼-오 대각선 탐색 함수 정의
+// '/' 대각선 탐색 함수 정의
 void bt(int idx, int cnt);
 int board[10][10]; // 체스판 상태 저장 배열
-bool visited[20];  // 오-왼 대각선 체크 배열
+bool visited[20];  // '\' 대각선 체크 배열
 int n, mx = 0;     // 비숍 최대값 저장 변수
 
 int main()
@@ -44,11 +44,12 @@ void bt(int s, int cnt)
         int c = s - r; // 이동 변수 할당
         if (board[r][c] != 1)
             continue;            // 비숍을 못 두는 위치는 스킵
-        int d = r - c + (n - 1); // 오-왼 대각선 체크 변수 할당
+        int d = r - c + (n - 1); // '\' 대각선 체크 변수 할당
         if (visited[d])
             continue;       // 해당 대각선 사용 시 스킵
         visited[d] = true;  // 해당 대각선 사용
         bt(s + 2, cnt + 1); // 다음 탐색 시작
         visited[d] = false; // 대각선 할당 해제
     }
+
 }
