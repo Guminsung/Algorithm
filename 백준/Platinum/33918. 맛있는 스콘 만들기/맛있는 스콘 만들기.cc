@@ -54,7 +54,7 @@ int main()
             dp[0][i] = dp[1][i];
     }
     int mx = 0; // 최대 스콘의 맛 저장 변수
-    for (int i = 0; i <= m; i++)
+    for (int i = 1; i <= m; i++)
         mx = max(mx, dp[0][i]); // 최대값 갱신
     cout << mx;
     return 0;
