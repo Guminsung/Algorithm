@@ -21,10 +21,8 @@ int main()
         cout << -1;
         return 0;
     }
-    // 거슬러 줄 수 있는 경우
-    else
-        // 나머지 액수 5원 동전으로 계산
-        coin += n / 5;
+    // 나머지 액수 5원 동전으로 계산
+    coin += n / 5;
     cout << coin;
     return 0;
 }
