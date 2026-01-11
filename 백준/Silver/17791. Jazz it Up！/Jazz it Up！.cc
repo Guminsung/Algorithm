@@ -11,13 +11,13 @@ int main()
     cin.tie(NULL);
     // 나눔수 할당
     int n, div = 2;
-    // 에라토스테네스의 체로 소수가 아닌 수들 체크
-    for (int i = 2; i * i <= 100000; i++)
-        for (int j = i; j * i <= 100000; j++)
-            prime[i * j] = true;
     cin >> n;
-    int temp = n;
+    // 에라토스테네스의 체로 소수가 아닌 수들 체크
+    for (int i = 2; i * i <= n; i++)
+        for (int j = i; j * i <= n; j++)
+            prime[i * j] = true;
     // n의 소인수 체크
+    int temp = n;
     while (temp != 1)
     {
         // 나눔수가 소인수에 해당하면 체크
