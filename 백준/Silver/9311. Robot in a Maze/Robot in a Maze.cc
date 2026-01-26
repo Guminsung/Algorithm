@@ -62,9 +62,6 @@ int main()
                 for (int k = 0; k < 4; k++)
                 {
                     int nx = x + dx[k], ny = y + dy[k];
-                    // 범위 이탈 시 제외
-                    if (nx < 0 || nx >= r || ny < 0 || ny >= c)
-                        continue;
                     // 벽위치거나 방문한 곳 제외
                     if (maze[nx][ny] == 'X' || visited[nx][ny] == true)
                         continue;
