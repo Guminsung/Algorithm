@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <algorithm>
 
 using namespace std;
 
@@ -46,4 +47,5 @@ void bt(int k)
             bt(k + 1);
             visited[i] = false;
         }
+
 }
